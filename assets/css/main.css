@@ -12,14 +12,14 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "josefin Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Questrial",  sans-serif;
   --nav-font: "Noto Sans",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #fff; /* Background color for the entire website, including individual sections */
   --default-color: #0a0f14; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0f2943; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #e87532; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -154,7 +154,7 @@ h6 {
   background: var(--surface-color);
   border-radius: 50px;
   padding: 5px 25px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, .7);
 }
 
 .header .logo {
@@ -701,7 +701,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 80px 0;
+  padding: 0px 0;
   position: relative;
   overflow: hidden;
 }
@@ -720,7 +720,7 @@ section,
 }
 
 .hero .content .lead {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
@@ -799,7 +799,8 @@ section,
 
 .hero .hero-image {
   position: relative;
-  padding: 2rem;
+  padding: 0rem;
+  filter: drop-shadow(20px 0 30px #000);
 }
 
 .hero .hero-image img {
@@ -835,7 +836,7 @@ section,
 @media (max-width: 991px) {
   .hero {
     text-align: center;
-    padding: 60px 0;
+    padding: 5dvh 0px 0 0;
   }
 
   .hero .cta-buttons {
