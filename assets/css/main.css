@@ -44,8 +44,16 @@
   --surface-color: #ffffff;
 }
 
+.blue-background {
+  --background-color: #0077FF;
+  /*--default-color: #0a0f14;
+  --heading-color: #0f2943;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;*/
+}
+
 .dark-background {
-  --background-color: #060606;
+  --background-color: #080808;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
